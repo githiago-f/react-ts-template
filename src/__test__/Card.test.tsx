@@ -1,13 +1,22 @@
 import React from 'react';
-import Card from 'styles/Card';
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
+import Card from 'components/Card';
 
-test('Render Card component without crashing', () => {
-	shallow(<Card title="Card's title" />);
+describe('# Card component test', () => {
+    const title = 'Titulo de um card';
+    
+    beforeEach(() => {
+        render(<Card title={title} />);
+    });
+    
+    it('should Render Card component without crashing', async () => {
+        const cardTitle = render(<h3>Titulo de um card</h3>);
+        expect(cardTitle).toBeInTheDocument();
+    });
+
+    it('Contains a title', () => {
+        
+    });
 });
 
-test('Contains a title', () => {
-	const title = <h3>Card&apos;s title</h3>;
-	const card = shallow(<Card title="Card's title" />);
-	expect(card.contains(title)).toBe(true);
-});
+
