@@ -1,7 +1,8 @@
 {
     "name": "react-ts-template",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "private": true,
+    "homepage": "<<url>>",
     "dependencies": {
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
@@ -19,6 +20,18 @@
     "eslintConfig": {
         "extends": "react-app"
     },
+    "devDependencies": {
+        "@testing-library/jest-dom": "5.11.4",
+        "@testing-library/react": "11.0.4",
+        "@testing-library/user-event": "12.1.6",
+        "@types/jest": "^24.0.0",
+        "@types/node": "^12.12.2",
+        "@types/react": "^16.9.0",
+        "@types/react-dom": "^16.9.0",
+        "@types/react-router-dom": "^5.1.5",
+        "@types/styled-components": "^5.1.0",
+        "typescript": "4.0.3"
+    },
     "browserslist": {
         "production": [
             ">0.2%",
@@ -30,17 +43,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "devDependencies": {
-        "@types/react-router-dom": "^5.1.5",
-        "@types/styled-components": "^5.1.0",
-        "@types/jest": "^24.0.0",
-        "@types/node": "^12.12.2",
-        "@types/react": "^16.9.0",
-        "@types/react-dom": "^16.9.0",
-        "@testing-library/jest-dom": "5.11.4",
-        "@testing-library/react": "11.0.4",
-        "@testing-library/user-event": "12.1.6",
-        "typescript": "~3.7.2"
     }
 }
