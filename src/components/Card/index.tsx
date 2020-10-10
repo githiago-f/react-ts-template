@@ -1,15 +1,16 @@
 import React from 'react';
 import { Props } from '@comp/card';
+import { CardBody, CardHeader } from './styles';
 
 const Card = (props: Props) => {
   const { card: { title } } = props;
 
   return (
     <>
-      <div className="card-head">
+      <CardHeader>
         <h3>{title}</h3>
-      </div>
-      <div className="card-body"></div>
+      </CardHeader>
+      <CardBody></CardBody>
     </>
   );
 };
