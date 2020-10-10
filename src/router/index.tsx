@@ -7,10 +7,8 @@ import Home from 'pages/Home';
 
 export const BaseRoutes = () => {
   return (
-    <Router>
-      <Route exact path="/">
-        <Home />
-      </Route>
+    <Router basename={require('./../../package.json').homepage}>
+      <Route exact path="/" component={Home} />
     </Router>
   );
 };

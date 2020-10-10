@@ -1,8 +1,9 @@
 import React from 'react';
+import { Props } from '@comp/card';
 
-const Card = (props: { title: string }) => {
-  const { title } = props;
-  
+const Card = (props: Props) => {
+  const { card: { title } } = props;
+
   return (
     <>
       <div className="card-head">

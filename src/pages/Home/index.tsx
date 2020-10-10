@@ -1,5 +1,6 @@
 import React from 'react';
 import { Title } from 'components/Typography/Title';
+import Card from 'components/Card';
 
 const Home = () => {
   return (
@@ -16,6 +17,11 @@ const Home = () => {
           <p>
             Edite o conteúdo da pasta &quot;src&quot; para começar
           </p>
+        </div>
+        <div className="row">
+          <div className="col">
+            <Card card={{title: 'Titulo do card'}} />
+          </div>
         </div>
       </div>
     </>
